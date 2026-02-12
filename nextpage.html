@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Valentine's! 💕</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('D:\IMG-20241225-WA0004.jpg'); /* Replace with your Valentine image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 28px;
+    flex-direction: column;
+  }
+
+  .play-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<p>Yay! 💖 You said YES! Happy Valentine’s Day! 🌹</p>
+<button class="play-btn" onclick="playMusic()">Play Music 🎵</button>
+
+<audio id="music" loop>
+  <source src="D:\Kadhalaada-(Reprise)-MassTamilan.com.mp3" type="audio/mpeg">
+  Your browser does not support audio.
+</audio>
+
+<script>
+function playMusic() {
+  const audio = document.getElementById('music');
+  audio.play();
+}
+</script>
+
+</body>
+</html>
